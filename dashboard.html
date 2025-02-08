@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Japan_Circle.svg/512px-Japan_Circle.svg.png">
+  <title>日本語ガイド (Nihongo Gaido)</title>
+  <style>
+    /* Reset de estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+    
+    /* Cabeçalho com tema japonês */
+    header {
+      background: url('images/Flag_of_Japan_.jpg') no-repeat center center/cover;
+      position: relative;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    
+    /* Camada para escurecer a imagem e melhorar a legibilidade */
+    header::after {
+      content: '';
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+      inset-inline-end: 0;
+      inset-block-end: 0;
+    }
+    
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      z-index: 1;
+    }
+    
+    /* Navegação fixa com efeito de hover */
+    nav {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 1000;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      color: #d23669; /* tom de rosa inspirado na sakura */
+    }
+    
+    /* Estilos para as seções */
+    main {
+      max-inline-size: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-image: url("images/su-san-lee-E_eWwM29wfU-unsplash.jpg");
+      background-size: cover;
+    }
+    
+    section {
+      padding: 60px 20px;
+      margin-block-end: 40px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+      animation-delay: 0.3s;
+    }
+    
+    section h2 {
+      margin-block-end: 20px;
+      font-size: 2em;
+      color: #d23669;
+      text-align: center;
+    }
+    
+    section p {
+      margin-block-end: 20px;
+      font-size: 1.1em;
+      text-align: justify;
+    }
+    
+    /* Container para vídeo com proporção 16:9 */
+    .video-container {
+      position: relative;
+      padding-block-end: 56.25%; /* 16:9 */
+      block-size: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+      inline-size: 100%;
+      block-size: 100%;
+      border: none;
+      transition: transform 0.3s;
+    }
+    
+    .video-container iframe:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Animação de fade in para as seções */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com o título -->
+  <header>
+    <h1>日本語ガイド (Nihongo Gaido)</h1>
+  </header>
+  
+  <!-- Menu de navegação -->
+  <nav>
+    <ul>
+      <li><a href="#gramatica">文法 (ぶんぽう)</a></li>
+      <li><a href="#vocabulario">語彙 (ごい)</a></li>
+      <li><a href="#videos">ビデオ</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção Gramática -->
+    <section id="gramatica">
+      <h2>文法 (ぶんぽう)</h2>
+      <p>
+        Esta seção apresenta uma breve explicação sobre a estrutura e as regras gramaticais do japonês. Aqui você encontrará conceitos básicos e exemplos práticos que facilitam o entendimento da língua.
+      </p>
+      <p><em>Clique aqui para acessar alguns materiais didáticos que podem ajudar: </em></p>
+      <p><em><a href="https://drive.google.com/drive/folders/1INffmeV7Wc9KM8pWDuzW6HF1SNYr4gLY?usp=drive_link" target="_blank">初級 (Iniciantes)</a></em></p>
+      <p><em><a href="https://drive.google.com/drive/folders/1zIE3Wf_CoAGYzGsQPp6I7_b3BOTrsCuC?usp=drive_link" target="_blank">中級 (Intermediários)</a></em></p>      
+    </section>
+    
+    <!-- Seção Vocabulário -->
+    <section id="vocabulario">
+      <h2>語彙 (ごい)</h2>
+      <p>
+        Nesta seção, você encontrará uma materiais didáticos organizadas por temas. Cada item é apresentado com exemplos de uso para auxiliar na memorização e na aplicação prática.
+      </p>
+      <p><em><a href="https://drive.google.com/drive/folders/1N7wik7gOhuHt_wkqWMAASGPcbbRq0H98?usp=drive_link" target="_blank">Clique aqui para acessar alguns materiais didáticos que podem ajudar.</a></em></p>
+
+    </section>
+    
+    <!-- Seção Vídeos -->
+    <section id="videos">
+      <h2>ビデオ</h2>
+      <p>
+        Assista ao vídeo abaixo para uma introdução à língua japonesa. O vídeo pertence ao canal 123Japônes no YouTube. Todos os direitos são reservados ao criador do conteúdo.
+      </p>
+      <div class="video-container">
+        <!-- Vídeo de introdução à língua japonesa em português -->
+        <iframe src="https://www.youtube.com/embed/l6ujEnrg9cs" 
+        title="Introdução à Língua Japonesa" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
+      </div>
+    </section>
+  </main>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 日本語ガイド. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
